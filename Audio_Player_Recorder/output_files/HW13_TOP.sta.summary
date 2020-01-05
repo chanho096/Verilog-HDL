@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'AUD_main:u1|AUD_inout:u3|BCLK'
+Slack : -8.470
+TNS   : -404.729
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -4.735
+TNS   : -4664.276
+
+Type  : Slow 1200mV 85C Model Setup 'AUD_main:u1|clk_256fs:u1|MCLK'
+Slack : -1.394
+TNS   : -11.723
+
+Type  : Slow 1200mV 85C Model Setup 'AUD_main:u1|clk_256fs:u1|clock25'
+Slack : 0.108
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : -0.185
+TNS   : -0.185
+
+Type  : Slow 1200mV 85C Model Hold 'AUD_main:u1|clk_256fs:u1|clock25'
+Slack : 0.010
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'AUD_main:u1|AUD_inout:u3|BCLK'
+Slack : 0.386
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'AUD_main:u1|clk_256fs:u1|MCLK'
+Slack : 0.601
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -3198.759
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'AUD_main:u1|AUD_inout:u3|BCLK'
+Slack : -1.285
+TNS   : -86.095
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'AUD_main:u1|clk_256fs:u1|MCLK'
+Slack : -1.285
+TNS   : -11.565
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'AUD_main:u1|clk_256fs:u1|clock25'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Setup 'AUD_main:u1|AUD_inout:u3|BCLK'
+Slack : -7.633
+TNS   : -368.994
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -4.245
+TNS   : -4131.005
+
+Type  : Slow 1200mV 0C Model Setup 'AUD_main:u1|clk_256fs:u1|MCLK'
+Slack : -1.178
+TNS   : -9.865
+
+Type  : Slow 1200mV 0C Model Setup 'AUD_main:u1|clk_256fs:u1|clock25'
+Slack : 0.140
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : -0.151
+TNS   : -0.151
+
+Type  : Slow 1200mV 0C Model Hold 'AUD_main:u1|clk_256fs:u1|clock25'
+Slack : 0.002
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'AUD_main:u1|AUD_inout:u3|BCLK'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'AUD_main:u1|clk_256fs:u1|MCLK'
+Slack : 0.554
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -3149.127
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'AUD_main:u1|AUD_inout:u3|BCLK'
+Slack : -1.285
+TNS   : -86.095
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'AUD_main:u1|clk_256fs:u1|MCLK'
+Slack : -1.285
+TNS   : -11.565
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'AUD_main:u1|clk_256fs:u1|clock25'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Fast 1200mV 0C Model Setup 'AUD_main:u1|AUD_inout:u3|BCLK'
+Slack : -3.813
+TNS   : -180.889
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -2.243
+TNS   : -2150.558
+
+Type  : Fast 1200mV 0C Model Setup 'AUD_main:u1|clk_256fs:u1|MCLK'
+Slack : -0.138
+TNS   : -1.104
+
+Type  : Fast 1200mV 0C Model Setup 'AUD_main:u1|clk_256fs:u1|clock25'
+Slack : 0.330
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : -0.252
+TNS   : -0.252
+
+Type  : Fast 1200mV 0C Model Hold 'AUD_main:u1|clk_256fs:u1|clock25'
+Slack : 0.000
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'AUD_main:u1|AUD_inout:u3|BCLK'
+Slack : 0.169
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'AUD_main:u1|clk_256fs:u1|MCLK'
+Slack : 0.265
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -1404.590
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'AUD_main:u1|AUD_inout:u3|BCLK'
+Slack : -1.000
+TNS   : -67.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'AUD_main:u1|clk_256fs:u1|MCLK'
+Slack : -1.000
+TNS   : -9.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'AUD_main:u1|clk_256fs:u1|clock25'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

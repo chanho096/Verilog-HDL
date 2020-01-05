@@ -1,0 +1,27 @@
+
+State Machine - |HW13_TOP|AUD_main:u1|AUD_inout:u3|state
+Name state.S3 state.S2 state.S1 state.S0 
+state.S0 0 0 0 0 
+state.S1 0 0 1 1 
+state.S2 0 1 0 1 
+state.S3 1 0 0 1 
+
+State Machine - |HW13_TOP|AUD_main:u1|AUD_init:u2|state
+Name state.S5 state.S4 state.S3 state.S2 state.S1 state.S0 
+state.S0 0 0 0 0 0 0 
+state.S1 0 0 0 0 1 1 
+state.S2 0 0 0 1 0 1 
+state.S3 0 0 1 0 0 1 
+state.S4 0 1 0 0 0 1 
+state.S5 1 0 0 0 0 1 
+
+State Machine - |HW13_TOP|AUD_main:u1|AUD_init:u2|AUD_i2c:u1|state
+Name state.S7 state.S6 state.S5 state.S4 state.S3 state.S2 state.S1 state.S0 
+state.S0 0 0 0 0 0 0 0 0 
+state.S1 0 0 0 0 0 0 1 1 
+state.S2 0 0 0 0 0 1 0 1 
+state.S3 0 0 0 0 1 0 0 1 
+state.S4 0 0 0 1 0 0 0 1 
+state.S5 0 0 1 0 0 0 0 1 
+state.S6 0 1 0 0 0 0 0 1 
+state.S7 1 0 0 0 0 0 0 1 

@@ -1,0 +1,64 @@
+module aud_out (
+	AUD_DACLRCK,
+	AUD_DACDAT,
+	AUD_BCLK,
+	MCLK,
+	start,
+	reset,
+	q,
+	out
+);
+	inout AUD_DACLRCK;
+	output AUD_DACDAT, AUD_BCLK;
+	input MCLK, start, reset;
+	// 48 * 32 * 8khz = 12.288mhz
+	reg [5:0] clk_count;
+	reg [4:0] d_count;
+	reg [2:0] state;
+	reg BCLK, AUD_DACLRCK, AUD_DACDAT;
+	reg [15:0] DATL, DATR;
+	localparam S0=0, S1=1, S2=2, S3=3;
+	reg [15:0] TEST;
+	output [15:0] q; //
+	// for test
+	reg [15:0] addr;
+	reg [15:0] data, q;
+	wire [15:0] mem_out;
+	initial addr = 0;
+	mem u4 (addr, MCLK, data, 0, mem_out);
+	output out; //
+	assign out = (addr > 100);
+	initial clk_count <= 0;
+	always @ (posedge MCLK) begin
+		q = mem_out;
+		if (clk_count < 24) BCLK = 0;
+		else BCLK = 1;
+		
+		if (clk_count < 47) clk_count = clk_count+1;
+		else clk_count = 0;
+	end
+	
+	always @ (negedge BCLK or negedge reset) begin
+		if (~reset) begin state <= S0; AUD_DACLRCK <= 1; 
+			addr <= 0;
+		end
+		else 
+			case (state)
+				S0: if (start) begin AUD_DACLRCK <= 0; state <= S1; 
+						d_count <= 16; DATL <= q; DATR <= q; addr <= addr + 1;
+						AUD_DACDAT = 1'bz;
+					end
+				S1: begin d_count = d_count-1; 
+						AUD_DACDAT = DATL[15]; DATL[15:0] = {DATL[14:0], 1'b0};
+						if (d_count == 0) state <= S2;
+					end
+				S2: begin state <= S3; d_count <= 16; AUD_DACDAT = 1'bz; AUD_DACLRCK <= 1; end
+				S3: begin d_count = d_count-1;
+						AUD_DACDAT = DATR[15]; DATR[15:0] = {DATR[14:0], 1'b0};
+						if (d_count == 0) state <= S0;
+					end
+			endcase
+	end
+	
+	assign AUD_BCLK = BCLK;
+endmodule

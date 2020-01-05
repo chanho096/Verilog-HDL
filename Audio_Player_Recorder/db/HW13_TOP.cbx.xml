@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="HW13_TOP">
+		<CBX_INST_ENTRY INSTANCE_NAME="|HW13_TOP|AUD_main:u1|mem:u5|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_vmi1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
